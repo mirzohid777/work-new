@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mean.css">
+</head>
+
+<body>
+
+
+
+
+    <section class="conatiner">
+
+        <header>
+            <a class="header-a" href="./index.html">
+                <div class="logo">
+                    <span class="icon">💼</span>
+                    <span class="brand">Ish<span>Top</span>.uz</span>
+                </div>
+            </a>
+
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="mobile-overlay" id="mobileOverlay"></div>
+
+            <div class="mobile-sidebar" id="mobileSidebar">
+                <div class="sidebar-header">
+                    <h2 class="sidebar-title">
+                        <span class="brand-new">Ish<span>Top</span>.uz</span>
+                    </h2>
+                    <button class="close-btn" id="closeBtn">✕</button>
+                </div>
+
+                <nav class="sidebar-nav">
+                    <a href="./index.html" class="sidebar-link">🏠 Bosh sahifa</a>
+                    <a href="./ishlar.html" class="sidebar-link">💼 Ishlar</a>
+                    <a href="./biz.haqimizda.html" class="sidebar-link">👥 Biz haqimizda</a>
+                    <a href="./royhatdan.otish.html" class="sidebar-link">📞 Royhatdan o'tish</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <p class="footer-title">Til tanlash</p>
+                    <div class="lang-buttons">
+                        <button class="lang-button" data-lang="uz">O'zb</button>
+                        <button class="lang-button" data-lang="ru">Рус</button>
+                        <button class="lang-button" data-lang="en">Eng</button>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="nav-buttons" id="navMenu">
+                <a href="./index.html" class="nav-link" data-page="home">Bosh sahifa</a>
+                <a href="./ishlar.html" class="nav-link" data-page="ishlar">Ishlar</a>
+                <a href="./biz.haqimizda.html" class="nav-link" data-page="about">Biz haqimizda</a>
+
+                <div class="lang-dropdown">
+                    <button class="lang-btn">
+                        <img src="https://flagcdn.com/w20/uz.png" alt="UZ">
+                        <span>O'zbekcha</span>
+                        <span class="arrow">▾</span>
+                    </button>
+                    <ul class="lang-menu">
+                        <li data-lang="uz" class="active">
+                            <img src="https://flagcdn.com/w20/uz.png" alt="UZ"> O'zbekcha <span class="check">✓</span>
+                        </li>
+                        <li data-lang="ru">
+                            <img src="https://flagcdn.com/w20/ru.png" alt="RU"> Русский <span class="check">✓</span>
+                        </li>
+                        <li data-lang="en">
+                            <img src="https://flagcdn.com/w20/gb.png" alt="EN"> English <span class="check">✓</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#" class="new-profel">
+                    <img id="profileBtn" src="https://img.icons8.com/ios-filled/500/user-male-circle.png"
+                        alt="Profil" />
+                </a>
+                <a href="./royhatdan.otish.html" class="nav-link btn-register" data-page="register">Ro'yxatdan
+                    o'tish</a>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="ish-main">
+                <div class="ishlar-button">
+                    <div class="she">
+                        <img src="https://img.icons8.com/ios-filled/500/user-male-circle.png" alt="O‘g‘il bola">
+                    </div>
+                    <div class="she">
+                        <img src="https://img.icons8.com/ios-filled/500/user-female-circle.png" alt="Qiz bola">
+                    </div>
+                    <input type="text" placeholder="ishingizni qidiring">
+                    <button>Qidirsh</button>
+                </div>
+                <div class="ishlar-input">
+                    <section class="filter-container">
+                        <div class="filter-row">
+                            <div class="filter-group">
+                                <label>Rukn</label>
+                                <select>
+                                    <option>Istalgan toifa</option>
+                                    <option>IT va dasturlash</option>
+                                    <option>Marketing</option>
+                                    <option>Dizayn</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Ish turi</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>To‘liq stavka</option>
+                                    <option>Yarim stavka</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Bandlik turi</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>Doimiy</option>
+                                    <option>Vaqtinchalik</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Masofadan ishlash</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>Ha</option>
+                                    <option>Yo‘q</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="filter-row">
+                            <div class="filter-group">
+                                <label>Onlayn ishga yollash</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>Faqat onlayn</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Ish turi</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>To‘liq stavka</option>
+                                    <option>Yarim stavka</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label>Bandlik turi</label>
+                                <select>
+                                    <option>Hamma e'lonlar</option>
+                                    <option>Doimiy</option>
+                                    <option>Vaqtinchalik</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </section>
+
+
+                    <div class="work-new">
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Kiyim Dokoniga ogil qizlarni ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 4 500 000 - 12 000 000 so'm</span>
+                                    <span>📍 Toshkent, Chilonzor tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                </div>
+                                <div class="time">
+                                    ⏰ To‘liq bo‘lmagan bandlik
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">2025-10-27</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+                        <div class="job-card">
+                            <div class="job-info">
+                                <h3>Ishga qabul qilamiz</h3>
+                                <div class="details">
+                                    <span>💰 3 500 000 so'm</span>
+                                    <span>📍 Toshkent, Bektemir tumani</span>
+                                    <span>💼 Doimiy bandlik</span>
+                                    <span>⏰ To‘liq stavkada bandlik</span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="bottom">
+                                <span class="top-badge"><a href="./royhatdan.otish.html">TOP</a></span>
+                                <span class="date">Bugunda 10:21</span>
+                                <button class="like-btn">♡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const mobileSidebar = document.getElementById("mobileSidebar");
+        const mobileOverlay = document.getElementById("mobileOverlay");
+        const closeBtn = document.getElementById("closeBtn");
+        const langDropdown = document.querySelector(".lang-dropdown");
+        const langBtn = document.querySelector(".lang-btn");
+
+        hamburgerBtn.addEventListener("click", () => {
+            mobileSidebar.classList.add("open");
+            mobileOverlay.classList.add("show");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            mobileSidebar.classList.remove("open");
+            mobileOverlay.classList.remove("show");
+        });
+        mobileOverlay.addEventListener("click", () => {
+            mobileSidebar.classList.remove("open");
+            mobileOverlay.classList.remove("show");
+        });
+
+        langBtn.addEventListener("click", () => {
+            langDropdown.classList.toggle("active");
+        });
+
+    </script>
+    <script src="./mean.js"></script>
+</body>
+
+</html>
